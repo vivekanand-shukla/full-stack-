@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { generateQuiz } from "../api";
+import { useContext } from "react";
+
+import { QuizContext } from "../context/QuizContext";
 
 export default function Quiz() {
+    const { topic } = useContext(QuizContext);
   const navigate = useNavigate();
   const [quiz, setQuiz] = useState([]);
   console.log(quiz)
@@ -11,7 +15,7 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   console.log(score)
   useEffect(() => {
-    generateQuiz("computer").then(res => setQuiz(res.data));
+    generateQuiz(topic).then(res => setQuiz(res.data));
   }, []);
 
   if (!quiz.length) return <h2>Loading...</h2>;
