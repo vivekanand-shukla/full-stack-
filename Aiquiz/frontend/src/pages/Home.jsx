@@ -19,7 +19,7 @@ export default function Home() {
       <button onClick={() => navigate("/quiz")}>
         Start Quiz
       </button>
-      <input type="text"  />
+  
     </div>
   );
 }
