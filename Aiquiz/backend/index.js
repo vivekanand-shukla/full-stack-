@@ -6,7 +6,16 @@ require("dotenv").config();
 const quizRoutes = require("./routes/quizRoutes");
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: [
+    "https://full-stack-86o5.vercel.app", // frontend
+    "http://localhost:5173" // local dev
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use("/api/quiz", quizRoutes);
