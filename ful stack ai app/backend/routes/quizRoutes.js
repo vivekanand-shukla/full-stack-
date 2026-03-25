@@ -10,7 +10,7 @@ router.post("/generate", async (req, res) => {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-      model:  Modele || "stepfun/step-3.5-flash:free",
+      model:   "stepfun/step-3.5-flash:free",
         messages: [
            
           {
