@@ -1,9 +1,10 @@
 import axios from "axios";
 
 export const generateQuiz = (topic) => {
-  return axios.post("https://full-stack-xpzh.vercel.app/api/quiz/generate", {
+  return axios.post("https://full-stack-five-inky.vercel.app/api/quiz/generate", {
     topic
   });
 };
 
 // https://full-stack-xpzh.vercel.app/
+//https://full-stack-five-inky.vercel.app/
