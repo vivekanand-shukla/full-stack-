@@ -6,16 +6,21 @@ require("dotenv").config();
 const quizRoutes = require("./routes/quizRoutes");
 
 const app = express();
-const corsOptions = {
-  origin: [
-    "https://full-stack-86o5.vercel.app", // frontend
-    "http://localhost:5173" // local dev
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-};
+// const corsOptions = {
+//   origin: [
+//     "https://full-stack-86o5.vercel.app", // frontend
+//     "http://localhost:5173",
+//     // local dev
+//   ],
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   credentials: true
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors({
+  origin: "*", // test ke liye
+}));
+
 // app.options("*", cors(corsOptions));
 app.use(express.json());
 
