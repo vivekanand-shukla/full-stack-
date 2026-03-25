@@ -10,7 +10,7 @@ router.post("/generate", async (req, res) => {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-      model:   "qwen/qwen3-next-80b-a3b-instruct:free",
+      model:   "nvidia/nemotron-3-nano-30b-a3b:free",
         messages: [
            
           {
