@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f0f1a;
+  color: white;
+}
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #111;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #a855f7;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #1f1f2e;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.sidebar .active {
+  background: #7c3aed;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.search button {
+  padding: 10px 20px;
+  background: #7c3aed;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background: #2a2a40;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.itinerary {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: #7c3aed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.budget {
+  display: flex;
+  justify-content: space-between;
+}
+
+.budget div {
+  background: #2a2a40;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.card p {
+  margin-top: 8px;
+  color: #cbd5f5;
+  line-height: 1.5;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-row .left,
+.flex-row .right {
+  flex: 1;
+  background: #2a2a40;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.flex-row h2 {
+  margin-top: 10px;
+  color: #a855f7;
+}
