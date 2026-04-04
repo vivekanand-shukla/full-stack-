@@ -8,7 +8,7 @@ export default function App() {
   const [data, setData] = useState(null);
 
   const getPlan = async () => {
-    const res = await axios.get(`http://localhost:5000/plan?place=${place}`);
+    const res = await axios.get(`https://full-stack-plus-plus.vercel.app/plan?place=${place}`);
     setData(res.data);
   };
 
